@@ -1,0 +1,594 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*MY CODE*/
+
+* {
+  text-decoration: inherit;
+}
+
+main {
+  padding-top: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #866de8;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header .header-buy {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+  }
+
+    header .header-buy {
+      display: block;
+      font-family: Catamaran;
+      font-size: 16px;
+      color: #111;
+      text-transform: uppercase;
+      line-height: 38px;
+      border: 1px solid #111;
+      float: right;
+      margin-right: 40px;
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+}
+
+/*INDEX*/
+
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('img/banner3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center  {
+  display: table-cell;
+  vertical-align: middle;
+  }
+
+.index-banner h2 {
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 80px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #111
+}
+
+.index-banner h1 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+  }
+
+  .index-links div h3 {
+    font-family: Catamaran;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 500px;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-links div {
+    margin: 10px 10x 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-color: #78ec52;
+    }
+
+  .index-boxlink-square {
+
+  }
+}
+
+/*PORTFOLIO*/
+
+.portfolio-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.portfolio-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.portfolio-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .portfolio-links-h2 {
+    font-size: 28px;
+  }
+
+  .portfolio-img {
+    flex-basis: 250px;
+  }
+}
+
+/*PORTFOLIO*/
+
+/*IMAGES SIZE*/
+
+.portfolio.html {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.image {
+  width: 200px;
+}
+
+/*ABOUT*/
+
+.aboutme-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.aboutme-links {
+  flex-basis: 23%;
+}
+
+@media only screen and (min-width: 762px) {
+  .aboutme-links-h2 {
+    font-size: 28px;
+    margin: 10px;
+  }
+}
+/*ABOUT*/
+
+/*DIGITAL*/
+
+.digital-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.digital-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.digital-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.digital-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .digital-links-h2 {
+    font-size: 28px;
+  }
+
+  .digital-img {
+    flex-basis: 250px;
+  }
+}
+
+/*DIGITAL*/
+
+/*PAINTING*/
+.painting-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.painting-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.painting-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.painting-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .painting-links-h2 {
+    font-size: 28px;
+  }
+
+  .painting-img {
+    flex-basis: 250px;
+  }
+}
+
+/*PAINTING*/
+
+/*ILLUSTRATION*/
+.illustration-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.illustration-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.illustration-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.illustration-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .illustration-links-h2 {
+    font-size: 28px;
+  }
+
+  .illustration-img {
+    flex-basis: 250px;
+  }
+}
+/*ILLUSTRATION*/
+
+/*DOODLES*/
+.doodles-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.doodles-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.doodles-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.doodles-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 762px) {
+  .doodles-links-h2 {
+    font-size: 28px;
+  }
+
+  .doodles-img {
+    flex-basis: 250px;
+  }
+}
+/*DOODLES*/
+
+/*PHOTOGRAPHY*/
+.photography-links-h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.photography-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.photography-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.photography-img img {
+  width: 400%;
+}
+
+@media only screen and (min-width: 762px) {
+  .photography-links-h2 {
+    font-size: 28px;
+  }
+
+  .photography-img {
+    flex-basis: 250px;
+  }
+}
+/*PHOTOGRAPHY*/
+/*Test*/
+* {
+  margin: 0;
+  padding: 0;
+}
+  .move-me {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+/*Test*/
+/*FOOTER*/
+footer {
+  width: calc(108% - 98px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #E76DE8;
+  overflow: hidden;
+}
+
+footer ul  {
+  width: fit-content;
+  float: left;
+  paddding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: Catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.footer-links-buy {
+  display: none;
+}
+
+.footer-sm {
+  width: 40px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}

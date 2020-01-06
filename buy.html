@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nyasia Miranda: Portfolio</title>
+        <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+        <link href="css/main.css" rel="stylesheet" />
+
+<!-- Include the AngularJS library -->
+        <script src="js/vendor/angular-1.7.8/angular.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular-animaate.js"></script>
+        <script src="js/vendor/angular-1.7.8/angular-route.js"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900/Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+
+  </head>
+  <body >
+<!-- *Begin Header -->
+    <header>
+      <a href="index.html" class="header-brand">RoseRosu</a>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="buy.html" class="header-buy">Buy</a>
+      </nav>
+    </header>
+<!-- *End Header -->
+
+<!-- *Begin Banner -->
+    <main>
+        <div class="header">
+          <div class="container">
+            <h1>Nyasia Miranda</h1>
+          </div>
+        </div>
+
+        <div class="main" ng-controller="MainController">
+             <div class="container">
+
+               <h2>Available Work For Sale</h2>
+
+               <div ng-repeat="product in products" class="col-md-6">
+         				<div class="thumbnail">
+	           				<img ng-src="{{ product.cover }}">
+	           				<p class="title">{{ product.name }}</p>
+	       				    <p class="price">{{ product.price | currency }}</p>
+	       				    <p class="date">{{ product.pubdate | date }}</p>
+         				</div>
+       			</div>
+            </div>
+         </div>
+    </main>
+  <!-- *End Banner -->
+
+  <!-- *Begin Footer -->
+
+      <footer>
+          <ul class="footer-links-main">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="doodles.html">Doodles</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="footer-links-cases">
+            <li><p></p></li>
+            <li><a href="NYASIA MIRANDA- LATEST WORK"></a></li>
+            <li><a href="TRADITIONAL - ART PORTFOLIO"></a></li>
+            <li><a href="ROSEROSU - INSTAGRAM"></a></li>
+            <li><a href="GRAPHIC DESIGN - PORTFOLIO"></a></li>
+          </ul>
+          <div class="footer-sm">
+            <a href="https://www.instagram.com/roserosu/">
+              <img src="img/instagram-symbol.jpg" alt="instagram icon">
+            </a>
+            <a href="https://www.linkedin.com/in/nyasia-a-miranda-839157147/">
+              <img src="img/linkedin-logo-button.png" alt="linkedin icon">
+            </a>
+            <a href="https://www.facebook.com/ny.miranda.526">
+              <img src="img/facebook-logo-button.jpg" alt="facebook icon">
+            </a>
+          </div>
+      </footer>
+
+<!-- *End Footer -->
+        <!-- Modules -->
+        <script src="js/app2.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+
+  </body>
+</html>
